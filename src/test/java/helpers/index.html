@@ -5,17 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<my-element id = "6987560" class="myClass">
+<my-element id="6987560" class="myClass">
     My element
+
 </my-element>
+
 <script>
     class CustomElement extends HTMLElement{
-    constructor(){
-    super();
-    this.textContent='MY TEXT ELEMENT';
+        constructor(){
+        super();
+        this.textContent='MY TEXT ELEMENT';
+        }
     }
-    }
-    customElements.define('my-element')
+customElements.define('my-element', CustomElement)
 </script>
 </body>
 </html>
